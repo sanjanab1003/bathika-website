@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bathika the Fluffy Cat</title>
+  <style>
+    body {
+      font-family: 'Comic Sans MS', sans-serif;
+      background: #fffdf7;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background: #fdf1f5;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin: 0;
+      color: #d65a8e;
+    }
+
+    .cat-photo {
+      max-width: 200px;
+      border-radius: 50%;
+      margin: 1rem auto;
+      display: block;
+      box-shadow: 0 0 20px #ffdae5;
+    }
+
+    section {
+      padding: 1.5rem;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    .fun-facts {
+      background: #fef4e8;
+      padding: 1rem;
+      border-radius: 1rem;
+      margin-top: 1rem;
+    }
+
+    .bless-button {
+      display: block;
+      margin: 2rem auto;
+      padding: 1rem 2rem;
+      font-size: 1.2rem;
+      background-color: #ff99c8;
+      color: white;
+      border: none;
+      border-radius: 1rem;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .bless-button:hover {
+      background-color: #f76fa7;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      padding: 1rem;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Meet Bathika 🐱</h1>
+    <img src="bathika.jpg" alt="Bathika the cat" class="cat-photo"/>
+  </header>
+
+  <section>
+    <h2>About Bathika</h2>
+    <p>
+      Bathika is a small, pure white cat with the fluffiest, silkiest fur you’ve ever seen. His "skipity paps" are surprisingly powerful for his size! Sweet and affectionate, Bathika loves his mom and is known to bring calm and joy to anyone who meets him. Everyone wants to pet him — but many are jealous of that legendary fur. He even has magical powers to give blessings!
+    </p>
+
+    <div class="fun-facts">
+      <h3>Fun Facts</h3>
+      <ul>
+        <li>✨ Fur Level: MAX FLUFF</li>
+        <li>💪 Skipity Pap Strength: 💥💥💥</li>
+        <li>😇 Power: Blessing Giver</li>
+        <li>😻 Loved by All</li>
+      </ul>
+    </div>
+
+    <button class="bless-button" onclick="giveBlessing()">Receive Bathika’s Blessing 🙏</button>
+    <p id="blessing" style="text-align:center; font-size:1.2rem;"></p>
+  </section>
+
+  <footer>
+    Made with ❤️ for Bathika
+  </footer>
+
+  <script>
+    function giveBlessing() {
+      const blessings = [
+        "🌟 You are blessed with fluffy dreams!",
+        "🐾 You gain the power of the Pap!",
+        "✨ Bathika has blessed your week!",
+        "💫 Good vibes from the fluff master!",
+        "😺 Soft fur magic surrounds you!"
+      ];
+      const random = blessings[Math.floor(Math.random() * blessings.length)];
+      document.getElementById("blessing").textContent = random;
+    }
+  </script>
+
+</body>
+</html>
